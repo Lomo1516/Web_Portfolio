@@ -1,0 +1,104 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Portfolio Website</title>
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.1/css/all.min.css"
+    />
+  </head>
+  <body>
+    <!-- Floating Icons -->
+    <div class="floating-icons" id="floatingIcons"></div>
+
+    <header class="header">
+      <a href="#" class="logo"><span>Kevin Hinojo</span></a>
+
+      <ul class="nav-links">
+        <li>
+          <a href="#about">About</a>
+        </li>
+
+        <li>
+          <a href="#experience">Experience</a>
+        </li>
+
+        <li>
+          <a href="#projects">Projects</a>
+        </li>
+
+        <li>
+          <a href="#contact">Contact</a>
+        </li>
+      </ul>
+
+      <i class="fa-solid fa-bars" id="menu-icon"></i>
+
+      <button class="visit-btn">Visit Github</button>
+    </header>
+
+    <!--About Section-->
+    <section id="about" class="about">
+      <div class="about-container">
+        <img src="images/headshot.jpeg" alt="Kevin Hinojo" />
+        <div class="info-box">
+          <div class="text">
+            <h3>Hey, I'm</h3>
+            <h1>Kevin Hinojo</h1>
+            <span>Information Technology Student</span>
+          </div>
+
+          <!--Contact/Resume-->
+          <div class="btn-group">
+            <div class="btn">Download CV</div>
+            <div class="btn">Contact</div>
+          </div>
+          <!--Socials-->
+          <div class="socials">
+            <i class="fa-brands fa-github"></i>
+            <i class="fa-brands fa-linkedin-in"></i>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="timeline">
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="card">
+          <div class="card-header">
+            <div class="card-title">
+              <h2>Specialist - Product Zone (Seasonal)</h2>
+              <span class="company">Apple INC.</span>
+            </div>
+            <div class="card-date">August 2025 - Feb 2026</div>
+          </div>
+          <p class="card-description">
+            Delivered technical support for iOS, macOS, and Apple devices,
+            diagnosing hardware and software issues while guiding customers
+            through solutions. Assisted with device configuration, data
+            transfer, and security best practices, while maintaining accurate
+            service records to drive process improvement.
+          </p>
+          <div class="card-tags">
+            <span class="tag">C++</span>
+            <span class="tag">Python</span>
+          </div>
+        </div>
+      </div>
+
+      <div class="timeline-item">
+        <div class="timeline-dot"></div>
+        <div class="card">
+          <!-- next experience -->
+        </div>
+      </div>
+    </section>
+
+    <script src="script.js"></script>
+  </body>
+</html>
