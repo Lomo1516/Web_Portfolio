@@ -15,11 +15,11 @@
     <div class="floating-icons" id="floatingIcons"></div>
 
     <header class="header">
-      <a href="#" class="logo"><span>Kevin Hinojo</span></a>
+      <a href="#" class="logo"><img src="images/signature.png" alt="Kevin Hinojo" class="logo-img" /></a>
 
       <ul class="nav-links">
         <li>
-          <a href="#about">About</a>
+          <a href="#about-summary">About</a>
         </li>
 
         <li>
@@ -43,62 +43,176 @@
     <!--About Section-->
     <section id="about" class="about">
       <div class="about-container">
-        <img src="images/headshot.jpeg" alt="Kevin Hinojo" />
+        <div class="img-wrapper">
+          <img src="images/headshot.jpeg" alt="Kevin Hinojo" />
+        </div>
         <div class="info-box">
           <div class="text">
             <h3>Hey, I'm</h3>
-            <h1>Kevin Hinojo</h1>
-            <span>Information Technology Student</span>
+            <h1 id="typewriter"></h1>
+            <span id="typewriter-subtitle"></span>
           </div>
 
           <!--Contact/Resume-->
-          <div class="btn-group">
+          <div class="btn-group hidden-init" id="btn-group">
             <div class="btn">Download CV</div>
             <div class="btn">Contact</div>
           </div>
           <!--Socials-->
-          <div class="socials">
+          <div class="socials hidden-init" id="socials">
             <i class="fa-brands fa-github"></i>
             <i class="fa-brands fa-linkedin-in"></i>
           </div>
         </div>
       </div>
+      <a href="#about-summary" class="scroll-down hidden-init" id="scroll-down-arrow">
+        <span class="scroll-text">scroll down to see more</span>
+        <i class="fa-solid fa-chevron-down"></i>
+      </a>
+    </section>
+
+    <!-- About Summary -->
+    <section id="about-summary" class="about-summary-section">
+      <div class="section-title">
+        <h2>About</h2>
+        <div class="title-underline"></div>
+      </div>
+      <div class="about-summary-box reveal-up">
+        <i class="fa-solid fa-user about-summary-icon"></i>
+        <p>
+          Aspiring IT Support Specialist with a strong foundation in troubleshooting, operating systems, and networking
+          fundamentals, supported by hands-on academic training and customer-focused experience. Bilingual in English and
+          Spanish, currently completing CompTIA Security+ certification. Motivated to apply technical knowledge,
+          problem-solving skills, and strong communication abilities to deliver effective support in Help Desk and
+          Desktop Support roles.
+        </p>
+      </div>
     </section>
 
     <!-- Experience -->
-    <section id="experience" class="timeline">
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="card">
-          <div class="card-header">
-            <div class="card-title">
-              <h2>Specialist - Product Zone (Seasonal)</h2>
-              <span class="company">Apple INC.</span>
-            </div>
-            <div class="card-date">August 2025 - Feb 2026</div>
-          </div>
-          <p class="card-description">
-            Delivered technical support for iOS, macOS, and Apple devices,
-            diagnosing hardware and software issues while guiding customers
-            through solutions. Assisted with device configuration, data
-            transfer, and security best practices, while maintaining accurate
-            service records to drive process improvement.
-          </p>
-          <div class="card-tags">
-            <span class="tag">C++</span>
-            <span class="tag">Python</span>
-          </div>
-        </div>
+    <section id="experience" class="experience-section">
+      <div class="section-title">
+        <h2>Experience</h2>
+        <div class="title-underline"></div>
       </div>
 
-      <div class="timeline-item">
-        <div class="timeline-dot"></div>
-        <div class="card">
-          <!-- next experience -->
+      <div class="timeline">
+        <div class="timeline-line"></div>
+
+        <div class="timeline-item left reveal">
+          <div class="timeline-dot"></div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">
+                <h2>Specialist - Product Zone (Seasonal)</h2>
+                <span class="company">Apple INC.</span>
+              </div>
+              <div class="card-date">August 2025 - Feb 2026</div>
+            </div>
+            <p class="card-description">
+              Delivered technical support for iOS, macOS, and Apple devices,
+              diagnosing hardware and software issues while guiding customers
+              through solutions. Assisted with device configuration, data
+              transfer, and security best practices, while maintaining accurate
+              service records to drive process improvement.
+            </p>
+            <div class="card-tags">
+              <span class="tag">macOS</span>
+              <span class="tag">iOS</span>
+              <span class="tag">Technical Support</span>
+            </div>
+          </div>
         </div>
+
+        <div class="timeline-item right reveal">
+          <div class="timeline-dot"></div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">
+                <h2>Talent Acquisition Support</h2>
+                <span class="company">Avanzos</span>
+              </div>
+              <div class="card-date">Dec 2024 - Aug 2025</div>
+            </div>
+            <p class="card-description">
+              Led a team of 3 other Talent Recruiters, partnering with the CEO to recruit top talent for
+              Autism Waiver and RBT roles. Sourced and screened high-quality candidates to support
+              the hiring process and team growth.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Talent Acquisition</span>
+              <span class="tag">Recruiting</span>
+              <span class="tag">Team Leadership</span>
+            </div>
+          </div>
+        </div>
+
+        <div class="timeline-item left reveal">
+          <div class="timeline-dot"></div>
+          <div class="card">
+            <div class="card-header">
+              <div class="card-title">
+                <h2>Shift Supervisor</h2>
+                <span class="company">Starbucks Corporation</span>
+              </div>
+              <div class="card-date">Feb 2022 - August 2025</div>
+            </div>
+            <p class="card-description">
+              Led a team of 4–6 employees, ensuring smooth operations during
+              high-volume shifts. Trained new employees in systems, workflows,
+              and customer service best practices. Addressed operational
+              challenges in real-time using problem-solving skills and
+              restructured goals to improve team efficiency and customer
+              satisfaction.
+            </p>
+            <div class="card-tags">
+              <span class="tag">Team Leadership</span>
+              <span class="tag">Training</span>
+              <span class="tag">Customer Service</span>
+              <span class="tag">Problem Solving</span>
+            </div>
+          </div>
+        </div>
+
       </div>
     </section>
 
+    <!-- Contact -->
+    <section id="contact" class="contact-section">
+      <div class="section-title">
+        <h2>Contact</h2>
+        <div class="title-underline"></div>
+      </div>
+
+      <p class="contact-subtitle">💬 Have questions or ideas? Let's talk! 🚀</p>
+
+      <div class="contact-wrapper">
+        <!-- Form -->
+        <div class="contact-form-box">
+          <form id="contact-form">
+            <div class="form-group">
+              <label>Your Name</label>
+              <input type="text" name="from_name" placeholder="What's your good name?" required />
+            </div>
+            <div class="form-group">
+              <label>Your Email</label>
+              <input type="email" name="from_email" placeholder="What's your email address?" required />
+            </div>
+            <div class="form-group">
+              <label>Your Message</label>
+              <textarea name="message" placeholder="How can I help you?" rows="6" required></textarea>
+            </div>
+            <button type="submit" class="send-btn" id="send-btn">SEND MESSAGE</button>
+            <p class="form-status" id="form-status"></p>
+          </form>
+        </div>
+
+        <!-- Illustration -->
+        
+      </div>
+    </section>
+
+    <script src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
     <script src="script.js"></script>
   </body>
 </html>
