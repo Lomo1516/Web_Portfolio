@@ -100,7 +100,7 @@ const observer = new IntersectionObserver((entries) => {
 revealItems.forEach(item => observer.observe(item));
 
 // EmailJS
-emailjs.init("9knZjq6wqld32a9g8RAjq");
+emailjs.init("NEQxr2JilplQXKgew");
 
 const contactForm = document.getElementById('contact-form');
 const sendBtn = document.getElementById('send-btn');
@@ -111,7 +111,7 @@ contactForm.addEventListener('submit', function (e) {
   sendBtn.textContent = 'SENDING...';
   sendBtn.disabled = true;
 
-  emailjs.sendForm('service_skhearq', 'template_nkwgb0p', contactForm)
+  emailjs.sendForm('service_skhearq', 'template_esy9vzx', contactForm)
     .then(() => {
       formStatus.textContent = '✅ Message sent successfully!';
       formStatus.style.color = '#D4AF37';
